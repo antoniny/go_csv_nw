@@ -16,7 +16,6 @@ Nota: Os testes foram realizados em ambiente Windows 10 e DockerContainer linux 
 ## Fontes
 
 - gitHub - https://github.com/antoniny/go_lang_text.git
-- DockerHub - https://hub.docker.com/r/antoniny/go_lang_text
 
 ## Instalação e execução pelo Windows
 
@@ -43,16 +42,6 @@ Nota: Considerando o serviço Docker ativo na maquina. Utilizado container linux
 #### Docker Linux Containes
 
 
-##### Para executar o projeto do docketHUB no docker, siga a instrução abaixo.
-
-Projeto: https://hub.docker.com/r/antoniny/go_lang_text
-
-> Comando a ser executado no command line (Este comando irá realizar o download e executar a imagem hospedada gitHub *url acima*)
-
-1 - docker run -it antoniny/go_lang_text
-
-  
-
 ##### Pasta Local Projeto - Windows Via Docker
 
 Para executar o projeto via pasta do projeto no Docker, siga as instruções abaixo
@@ -64,13 +53,13 @@ Realizar instalaçao do GO LANG e criar as variaveis de ambiente do windows.
 >%GOROOT% -> Diretório de instalação do golang
 
 ##### Execução do programa localmente "sem" utilização do Docker - diretamente via GoLang
-Faça o download do projeto para a estrutura abaixo. (https://github.com/antoniny/go_lang_text.git)
->$GOPATH$/src/github.com/antoniny/go_lang_text/
+Faça o download do projeto para a estrutura abaixo. (https://github.com/antoniny/go_csv_nw.git)
+>$GOPATH$/src/github.com/antoniny/go_csv_nw/
 
  ```bash
 1 - cd %GOPATH%/src/
-2 - get -v github.com/antoniny/go_lang_text/
-3 - cd github.com/antoniny/go_lang_text/
+2 - get -v github.com/antoniny/go_csv_nw/
+3 - cd github.com/antoniny/go_csv_nw/
 4 - main.exe file_input.txt
 Nota: Teste realizado com compilação original
 ```
@@ -79,28 +68,28 @@ Nota: Teste realizado com compilação original
 Acesse cmd do windows e digite as linhas de comando abaixo.
 
 ##### build docker local
-Faça o download do projeto para a estrutura abaixo. (https://github.com/antoniny/go_lang_text.git)
-$GOPATH$/src/github.com/antoniny/go_lang_text/
+Faça o download do projeto para a estrutura abaixo. (https://github.com/antoniny/go_csv_nw.git)
+$GOPATH$/src/github.com/antoniny/go_csv_nw/
 
 ```bash
-1 - cd %GOPATH%\src\github.com\antoniny\go_lang_text\
-2 - docker build -t docker_go_lang_text:DEMO . -f Dockerfile
-3 - docker images | grep docker_go_lang_text
-4 - docker run -it docker_go_lang_text:DEMO
+1 - cd %GOPATH%\src\github.com\antoniny\go_csv_nw\
+2 - docker build -t docker_go_csv_nw:DEMO . -f Dockerfile
+3 - docker images | grep docker_go_csv_nw
+4 - docker run -it docker_go_csv_nw:DEMO
 ```
 ##### build docker DOCKERHUB
 
 ```bash
-1 - docker pull antoniny/go_lang_text
-2 - docker run -it antoniny/go_lang_text:latest
+1 - docker pull antoniny/go_csv_nw
+2 - docker run -it antoniny/go_csv_nw:latest
 ```
 
 ##### docker-compose
-Faça o download do projeto para a estrutura abaixo. (https://github.com/antoniny/go_lang_text.git)
-$GOPATH$/src/github.com/antoniny/go_lang_text/
+Faça o download do projeto para a estrutura abaixo. (https://github.com/antoniny/go_csv_nw.git)
+$GOPATH$/src/github.com/antoniny/go_csv_nw/
 
 ```bash
-1 - cd %GOPATH%\src\github.com\antoniny\go_lang_text\
+1 - cd %GOPATH%\src\github.com\antoniny\go_csv_nw\
 2 - docker-compose up -d
 4 - docker-compose up
 ```
