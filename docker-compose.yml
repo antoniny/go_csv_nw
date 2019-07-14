@@ -1,0 +1,21 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+     POSTGRES_DB: nw_app
+     POSTGRES_USER: user_app
+     POSTGRES_PASSWORD: user_app
+    ports:
+      - 5432:5432
+  app:
+    image: golang:alpine
+    build: .
+    working_dir: /build
+    command: ["go", "run", "main.go", "file_input.txt"]    
+    volumes:
+      - .:/build
+    depends_on:
+      - db
+    links:
+      - db
