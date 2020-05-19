@@ -1,8 +1,4 @@
-/**
-* Author: Anderson Antoniny
-* Desafio Neoway
-* Data: 2019-03-27
-**/
+
 
 package main
 
